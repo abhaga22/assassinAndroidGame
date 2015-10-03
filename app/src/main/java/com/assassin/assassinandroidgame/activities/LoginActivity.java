@@ -44,7 +44,11 @@ public class LoginActivity extends AppCompatActivity{
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                // App code
+                // go to join game
+
+                Intent intent = new Intent(getApplicationContext(), JoinGameActivity.class);
+
+                startActivity(intent);
 
             }
 
