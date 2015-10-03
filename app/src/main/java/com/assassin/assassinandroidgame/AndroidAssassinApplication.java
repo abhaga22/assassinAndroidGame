@@ -3,6 +3,7 @@ package com.assassin.assassinandroidgame;
 import android.app.Application;
 
 import com.parse.Parse;
+import com.parse.ParseFacebookUtils;
 
 /**
  * Created by Abhinav on 10/3/2015.
@@ -16,5 +17,6 @@ public class AndroidAssassinApplication extends Application {
         Parse.enableLocalDatastore(this);
 
         Parse.initialize(this, "j8TYn96ROaW0hxHkYihb31JAVPGUTlDYF7sGJlk0", "MXT0iefC5JUKHyS91qBM0UXj6uvjrQEx1bSCPzRl");
+        ParseFacebookUtils.initialize(this);
     }
 }
