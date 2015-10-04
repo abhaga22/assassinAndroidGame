@@ -65,6 +65,7 @@ public class LoginActivity extends AppCompatActivity{
                         }
                     }
                 });
+
             }
         });
         // If using in a fragment

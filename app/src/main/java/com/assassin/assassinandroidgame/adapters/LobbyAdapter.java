@@ -12,6 +12,7 @@ import com.assassin.assassinandroidgame.R;
 import com.parse.Parse;
 import com.parse.ParseUser;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -81,7 +82,9 @@ public class LobbyAdapter extends
 
     }
 
-    public void addPlayers(List<ParseUser> players) {
+    public void setPlayers(List<ParseUser> players) {
+
+        mUserList = new ArrayList<>();
 
         for (ParseUser player : players) {
 
