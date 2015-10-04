@@ -1,5 +1,6 @@
 package com.assassin.assassinandroidgame.activities;
 
+import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -30,6 +31,13 @@ public class JoinGameActivity extends AppCompatActivity {
 
                 v.setBackgroundColor(color);
 
+                Intent intent = new Intent(getApplicationContext(), LobbyActivity.class);
+
+                //add boolean to intent for weather host or not
+
+                intent.putExtra(LobbyActivity.IS_HOST, true);
+
+                startActivity(intent);
             }
         });
 
@@ -41,6 +49,14 @@ public class JoinGameActivity extends AppCompatActivity {
                 int color = ContextCompat.getColor(getApplicationContext(), R.color.colorPrimary);
 
                 v.setBackgroundColor(color);
+
+                Intent intent = new Intent(getApplicationContext(), LobbyActivity.class);
+
+                //add boolean to intent for weather host or not
+
+                intent.putExtra(LobbyActivity.IS_HOST, false);
+
+                startActivity(intent);
 
             }
         });
