@@ -32,7 +32,7 @@ import java.util.Random;
  * v1.0 - this class should fetch the user's position from GPS or network provider and display the coordinates in a textview
  *
  */
-public class MainGameActivity extends AppCompatActivity implements ConnectionCallbacks, OnConnectionFailedListener, SensorEventListener, com.google.android.gms.location.LocationListener {
+public class DirectionToVictim extends AppCompatActivity implements ConnectionCallbacks, OnConnectionFailedListener, SensorEventListener, com.google.android.gms.location.LocationListener {
 
     TextView txt;
     Button killBtn;
@@ -58,7 +58,7 @@ public class MainGameActivity extends AppCompatActivity implements ConnectionCal
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_game);
+        setContentView(R.layout.victim_direction);
 
         comp = (ImageView)findViewById(R.id.compass);
         killBtn = (Button)findViewById(R.id.killButton);

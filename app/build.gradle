@@ -32,6 +32,9 @@ dependencies {
 
     compile fileTree(dir: 'libs', include: 'Parse-*.jar')
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/feature/featureJoinGameScreen
     compile fileTree(dir: 'libs', include: 'ParseFacebookUtilsV4-*.jar')
 }
